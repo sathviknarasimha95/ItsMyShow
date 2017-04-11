@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg1"
+              android:scaleType="centerCrop">
+
+    <TextView
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/regName"
+        android:hint="Name"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/regEmail"
+        android:hint="E-mail"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regPass"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regRepass"
+        android:hint="Re-enter Password"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:text="Register"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/regButton"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#DD2C00"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

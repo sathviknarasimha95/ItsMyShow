@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@drawable/bg1"
+                android:scaleType="centerCrop">
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitCSV"
+        android:maxLength="3"
+        android:hint="CVV"
+        android:layout_above="@+id/debitPay"
+        android:layout_toLeftOf="@+id/debitEndMonth"
+        android:layout_toStartOf="@+id/debitEndMonth"
+        android:layout_marginBottom="14dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:text="Ends in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/debitEndYear"
+        android:layout_alignBottom="@+id/debitEndYear"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitEndMonth"
+        android:maxLength="2"
+        android:hint="Month"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitEndYear"
+        android:maxLength="4"
+        android:hint="Year"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/debitCSV"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:text="Pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/debitPay"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="125dp"
+        android:layout_toEndOf="@+id/debitEndYear"
+        android:layout_toRightOf="@+id/debitEndYear"
+        android:textColor="#FFFFFF"
+        android:background="#DD2C00"/>
+
+    <TextView
+        android:text="Debit card details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:text="Card Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitNum1"
+        android:maxLength="4"
+        android:hint="- - - -"
+        android:layout_alignBaseline="@+id/debitnum2"
+        android:layout_alignBottom="@+id/debitnum2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitNum4"
+        android:maxLength="4"
+        android:hint="- - - -"
+        android:paddingTop="0dp"
+        android:layout_above="@+id/debitEndYear"
+        android:layout_toRightOf="@+id/debitnum3"
+        android:layout_toEndOf="@+id/debitnum3"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitnum2"
+        android:maxLength="4"
+        android:hint="- - - -"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignBaseline="@+id/debitNum4"
+        android:layout_alignBottom="@+id/debitNum4"
+        android:layout_toRightOf="@+id/debitNum1"
+        android:layout_toEndOf="@+id/debitNum1"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debitnum3"
+        android:maxLength="4"
+        android:hint="- - - -"
+        android:layout_width="80dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignBaseline="@+id/debitNum4"
+        android:layout_alignBottom="@+id/debitNum4"
+        android:layout_toRightOf="@+id/debitnum2"
+        android:layout_toEndOf="@+id/debitnum2"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
